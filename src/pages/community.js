@@ -170,6 +170,7 @@ function Community() {
     setShowModal(false);
   });
 
+  // 컴포넌트가 마운트될 때 firebase/firestore posts 데이터를 가져와 posts 상태로 설정함
   useEffect(() => {
     const fetchData = async () => {
       try {
